@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Software Insecurities</title>
+        <meta name="description" content="Software insecurities">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="all">
+        <link href="/main.css" rel="stylesheet">
+    </head>
+    <body style="font-family:'Roboto',sans-serif;background-color:#020100;">
+        <div id="text" style="margin: auto; padding: 10px; width: 50%; direction: flex; flex-direction: column; text-align: center;">
+            <h1 name="top">List of software insecurities and possible respective suggestions.</h1>
+            <p>If there's anything that has changed or is false, make an issue on this repo's GitHub with information. If you need more convincing see <a href="https://madaidans-insecurities.github.io/index.html">Madaidan&#8216;s insecurities</a> (a Whonix developer).</p>
+            <a href="#electron">- Electron</a>
+            <br>
+            <a href="#userns">- Unprivileged User Namespaces</a>
+            <hr>
+            <h4 name="electron">Electron</h4>
+            <p>Building Electron from the <a href="https://github.com/electron/electron">source</a> shows the build arguments do not have Control Flow Integrity enabeld. See <a href="https://github.com/electron/electron/blob/b57ae67da67732c8cb9e30f49702fe56f3e5f3a6/build/args/all.gn#L22">this line</a>.<br>
+            Control Flow Integrity (CFI) is an exploit mitigation that aims to prevent altering of the flow of a program or code reuse attacks. Chromium by default has Control Flow Integrity enabled, Linux and Android using Clang's forward-edge CFI, Windows using Control Flow Guard.
+            <br><br>Suggestion: Use your software, such as Discord, in Google Chrome or any well-known Chromium browser. They're built with security in mind, and even if your Electron program grossly manages memory (looking at you Discord with old Electron builds), the browser can attempt to do a better job.</p>
+            
+            <h4 name="userns">Unprivileged User Namespaces</h4>
+            <p>There are both pros and cons to SUID sandboxing and User Namespaces, but it realistically depends on your threat model. SUID essentially drops privileges while user namespaces isolate identifiers and attributes such as user and group IDs, root directory, kernel capabilities, etc. This is great and the only way to isolate containers by using user namespaces. However containers suffer a major trade off forcing you to isolate them (unprivileged user namespaces) at the cost of a huge attack surface layer in the kernel. If you don't run Docker with user namespaces, it runs it as root. If you don't have mandatory access control (e.g. SELinux) with say Podman or Docker, you have kernel and root privileges as long as you have the daemon access.<br>
+            There is a Docker experiment to being able to run it without root, but it's far from complete.
+            <br>Another thing is user namespaces are getting popular. Malware will cater towards people with user namespaces enabled instead of SUID. Containers are popular too.
+            <br><br>Suggestion: Use SUID sandboxing if you do not deal with containers at all. If you need containers, use them with SELinux.</p>
+
+            <a href="#top">Go back to top.</a>
+        </div>
+    </body>
+</html>
