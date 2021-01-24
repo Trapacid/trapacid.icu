@@ -26,7 +26,7 @@
             <p>There are both pros and cons to SUID sandboxing and User Namespaces, but it realistically depends on your threat model. SUID essentially drops privileges while user namespaces isolate identifiers and attributes such as user and group IDs, root directory, kernel capabilities, etc. This is great and the only way to isolate containers by using user namespaces. However containers suffer a major trade off forcing you to isolate them (unprivileged user namespaces) at the cost of a huge attack surface layer in the kernel. If you don't run Docker with user namespaces, it runs it as root. If you don't have mandatory access control (e.g. SELinux) with say Podman or Docker, you have kernel and root privileges as long as you have the daemon access.<br>
             There is a Docker experiment to being able to run it without root, but it's far from complete.
             <br>Another thing is user namespaces are getting popular. Malware will cater towards people with user namespaces enabled instead of SUID. Containers are popular too.
-            <br><br>Suggestion: Use SUID sandboxing if you do not deal with containers at all. If you need containers, use them with SELinux.</p>
+            <br><br>Suggestion: Use SUID sandboxing if you do not deal with containers at all. If you need containers, use user namespaces with SELinux.</p>
 
             <a href="#top">Go back to top.</a>
         </div>
