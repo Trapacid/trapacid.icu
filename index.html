@@ -1,104 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-        <title>ashleyisatrap - home</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="My personal website.">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="robots" content="all">
-        <link href="main.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous"/>
+    <title>Trapacid</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="My personal website.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noimageindex">
+    <link href="main.css" rel="stylesheet" type="text/css" title="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"
+        type="text/css" title="stylesheet"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" />
 </head>
 
-<body style="font-family:'Roboto',sans-serif;background-color:#020100;">
+<body style="font-family: 'Inter', monospace; background-color: #1A1423;">
 
-        <div style="flex-direction: row; display: flex; margin-top: 10rem; margin-left: 10rem;">
-                <img src="https://avatars.githubusercontent.com/u/25968795?s=460&u=2e2c658cd2f6cdb9dde9d407c2862842b9ff763f&v=4" alt="online profile picture">
-                <div id="welcome" style="display: flex; flex-direction: column; margin-left: 2rem; margin-top: 3rem;">
-                        <h1>Heya, my name's <span class="fading">Ashley</span>, or <span class="fading">Trapacid</span>
-                        </h1>
-                        <p style="margin-bottom: 2rem; margin-top: -1.5rem;" id="sys">I'm a Linux system administrator.</p>
-                </div>
+    <div class="flex-grid flex-row" style="margin-bottom: 1.5rem;">
+        <img id="pfp"
+            src="https://avatars.githubusercontent.com/u/25968795?s=460&u=2e2c658cd2f6cdb9dde9d407c2862842b9ff763f&v=4"
+            alt="GitHub profile picture" />
+        <div class="flex-grid flex-col" style="margin-left: 5rem; margin-top: 2rem; line-height: 2rem;">
+            <div class="text fadeIn-1s">
+                <h1>Hello! My name is <span class="fadeIn" style="color: #9CFFFA;">Ashley</span>.</h1>
+            </div>
+            <div class="text fadeIn-1s" style="margin-top: -1rem;">
+                <h2>I'm a <span class="fadeIn" style="color: #C2E812;">Linux System Administrator</span>.</h2>
+            </div>
         </div>
-        <div id="socials" style="margin-left: 14rem; margin-top: 2.5rem; flex-direction: row;">
-                <a style="margin-right: 5px;" href="https://twitter.com/linuxfur"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
-                                </path>
-                        </svg></a>
-                <a style="margin-right: 5px;" href="https://t.me/ashleyonline"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 448 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                        d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
-                                </path>
-                        </svg></a>
-                <a style="margin-right: 5px;" href="https://github.com/linuxfur"><svg stroke="currentColor" fill="currentColor" stroke-width="0"
-                                viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                        d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
-                                </path>
-                        </svg></a>
-        </div>
-        <div style="margin-left: 10rem; margin-top: 2rem; flex-direction: row; direction: flex; margin-top: 2rem;">
-                <svg id="text" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                        height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                                d="M7,17c2.414,0,4.435-1.721,4.898-4H14v2h2v-2h2v3h2v-3h1v-2h-9.102C11.435,8.721,9.414,7,7,7c-2.757,0-5,2.243-5,5 S4.243,17,7,17z M7,9c1.654,0,3,1.346,3,3s-1.346,3-3,3s-3-1.346-3-3S5.346,9,7,9z">
-                        </path>
-                </svg>
-                <p id="text" style="margin-top: -1.75rem; margin-left: 2rem; "> <a
-                                href="https://keys.openpgp.org/vks/v1/by-fingerprint/D1AF6C631F0F245604A950259507D5DCD1997DE9">0x9507D5DCD1997DE9</a>
-                </p>
-                <p id="text"> <a href="mailto:admin@trapacid.icu">admin 4T trapacid D()T icu</a></p>
-                <p id="text"> <a href="mailto:meowiee@archlinux.email">meowiee 4T archlinux D()T email</a></p>
-                <p id="text"> <a href="mailto:alastoruwu@riseup.net">alastoruwu 4T riseup D()T net</a></p>
-        </div>
-        <div id="text"
-                style="margin: auto; padding: 10px; width: 50%; direction: flex; flex-direction: column; text-align: center">
+    </div>
+    <div class="flex-grid flex-row">
+        <a style="margin-left: -1.25rem; margin-top: -0.1rem;" href="mailto:alastoruwu@riseup.net"><svg class="mx-4"
+                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="2.35em"
+                width="2.35em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z">
+                </path>
+            </svg></a>
 
-                <h1 style="white-space:nowrap" id="text">List of things I work for, host, have hosted, or any notable
-                        mentions</h1>
-                <p>Developer and Linux System Administrator for <a href="https://sfe.gg" target="_blank">Something for Everyone</a></p>
-                <p>Hosted a Minecraft beta 1.7.3 server</p>
-                <p>Used to be a seedbox, might go back to it now that I'm getting gigabit upload speeds and fibre.
-                </p>
-                <p>I run BOINC and Folding@Home, both on the LinusTechTips team.</p>
-                <p>I also run <a href="https://seedhunt.net/" target="_blank">Seedhunt</a> to contribute power to finding Minecraft
-                        seeds.</p>
-                <p>Know decent amount of Bash scripting.</p>
-                <p>Formerly hosted game servers such as Minecraft (release versions), CS:GO, Team Fortress 2 (and TF2
-                        Classic!), Rust, and (HL) Deathmatch Classic.</p>
-                <p>Pretty familiar with basic SELinux usage, hence why I always prefer RHEL or CentOS for production
-                        environments.</p>
-                <p>Used Linux distributions like CentOS, RHEL, Fedora, Ubuntu Server, Debian, and Arch Linux.</p>
-                <p>Formerly hosted PHP, Python, and Node applications such as interactive file servers and bots..</p>
-                <p>OpenVPN server to access my LAN securely from anywhere.</p>
-                <p>Used to have a crazy <a href="https://pi-hole.net/" target="_blank">Pi-Hole</a> setup using an OpenVPN server with a
-                        DNS over HTTPS server, Nginx DNS over TLS, and dnscrypt-proxy, all forwarded and reverse proxied with Nginx.</p>
-                <p>Lots and lots of NGINX hardening, optimizing, and configuration file syntax.<br>Dealt with reverse proxying <a href="https://github.com/cockpit-project/cockpit" target="_blank">Cockpit</a>, Transmission-daemon, Folding@Home, and Nodejs backends through Nginx.</p>
-                <p>Simple rsyslog server for my poor little Raspberry Pi 2B.</p>
-                <p>Running a <a href="https://www.eff.org/pages/what-tor-relay" target="_blank">Tor relay</a>, <a href="https://2019.www.torproject.org/docs/bridges.html.en" target="_blank">Tor bridge</a>, and <a
-                                href="https://www.pool.ntp.org" target="_blank">NTP</a> server.</p>
-                <p>Former Senior Linux System Administrator and junior Python developer for <a
-                                href="https://cypherbot.org" target="_blank">Cypher</a>, a Discord multi-purpose bot.</p>
-                <p>Former Discord server moderator (1k -> 2.1k members)</p>
-                <p>Competing in the <a href="https://www.uscyberpatriot.org/" target="_blank">CyberPatriot</a> program on an Open team,
-                        a program funded by the United States <a href="https://www.afa.org/" target="_blank">Air Force Association</a>,
-                        doing Ubuntu and Debian Linux. (We made it to Round 3!)</p>
-                <p>Attended camps (iD Tech) at the University of South Florida for C++ Application Programming and
-                        University of Miami for Cybersecurity.</p>
-                <p>Own three ThinkPads: X220t, T430, and T440p. T430 flashed with <a
-                                href="https://github.com/osresearch/heads" target="_blank">heads+coreboot</a>, and the T440p flashed
-                        with <a href="https://www.coreboot.org/" target="_blank">coreboot</a>. All running Fedora 32 and 33. All upgraded their hardware as much as possible (SATA SSD, Memory, Wi-Fi and Bluetooth cards, etc)</p>
-                <p>Messed with lots of hardware in desktops, laptops, and a little bit of phones.</p>
-                <p>Flashed <a 
-                        href="https://dd-wrt.com/" target="_blank">DD-WRT</a> on a Netgear R8000 router and got it working with my stupid annoying ISP (plan to do OpenWRT)</p>
-                <p>Decent knowledge in the standard TCP/IP network stack.</p>
-                <h6>website designed by <a href="https://github.com/iraizo">raizo</a></h6>
-        </div>
-        
+        <a href="https://twitter.com/linuxfur"><svg class="mx-4" stroke="currentColor" fill="currentColor"
+                stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+                </path>
+            </svg></a>
+        <a href="https://t.me/Trapacid"><svg class="mx-4" stroke="currentColor" fill="currentColor" stroke-width="0"
+                viewBox="0 0 448 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+                </path>
+            </svg></a>
+        <a href="https://github.com/Trapacid"><svg class="mx-4" stroke="currentColor" fill="currentColor"
+                stroke-width="0" viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
+                </path>
+            </svg></a>
+    </div>
+
+    <div class="flex-grid flex-row flex-wrap fadeIn-1s" style="margin-top: 2rem; margin-left: -1.75rem;">
+        <a class="mx-4"
+            href="https://www.ciwcertified.com/ciw-certifications/web-foundations-series/internet-business-associate"><img
+                id="iba" src="assets/IBA_Button.jpg" alt="CIW Interent Business Associate certified" /></a>
+        <a class="mx-4"
+            href="https://www.ciwcertified.com/ciw-certifications/web-foundations-series/network-technology-associate"><img
+                id="nta" src="assets/Network_Technology_Button.jpg"
+                alt="CIW Network Technology Associate certified" /></a>
+    </div>
+    <div class="flex-grid flex-row flex-wrap fadeIn-1s" style="margin-left: -1.65rem;">
+        <a class="mx-4" href="https://docs.microsoft.com/en-us/learn/certifications/mos-word-2016"><img id="MOS_Word"
+                src="assets/MOS_Word.png" alt="Microsoft Office Specialist Word 2016 certified" /></a>
+        <a class="mx-4" href="https://docs.microsoft.com/en-us/learn/certifications/mos-powerpoint-2016"><img
+                id="MOS_PowerPoint" src="assets/MOS_PowerPoint.png"
+                alt="Microsoft Office Specialist PowerPoint 2016 certified" /></a>
+    </div>
+    <div class="text" style="margin-top: 3rem;">
+        <h2>Experiences</h2>
+        <ul style="margin-left: -1rem; list-style-type: square;">
+            <li>Developer and Linux Sysadmin at <a href="https://sfe.gg">SFE</a></li>
+            <li>Former Linux Sysadmin for Cypher, a unique multi-purpose Discord bot</li>
+            <li>Former Linux Sysadmin for jelbrek, a custom ShareX file uploader</li>
+            <li>Linux Sysadmin for VoidNation, a German game server network</li>
+            <li>Attended <a href="https://www.idtech.com/">iD Tech</a> camps at <a
+                    href="htts://welcome.miami.edu/">University of Miami</a> and <a
+                    href="https://www.usf.edu/">University of South Florida</a> for Cybersecurity and C++ App
+                Development</li>
+            <li>Currently attend a technical high school in the Cybersecurity program</li>
+            <li>Competing in <a href="https://www.uscyberpatriot.org/">CyberPatriot</a>, a cybersecurity program funded
+                by the <a href="https://www.afa.org/">United States AFA</a></li>
+            <li>Years of experience using Linux server distributions</li>
+        </ul>
+    </div>
 </body>
 
 </html>
