@@ -5,6 +5,11 @@ html {
     margin: 3rem;
 }
 
+body {
+  background-color: #1A1423;
+  font-family: 'Inter', monospace;
+}
+
 h1, h2 {
     font-weight: bold;
 }
