@@ -3,6 +3,7 @@ html {
     font-size: 0.95rem;
     line-height: 1.5rem;
     margin: 3rem;
+    background-color: #1A1423;
 }
 
 h1, h2 {
@@ -80,10 +81,6 @@ a:hover {
 
 .text {
     color: #faf0f2;
-}
-
-.items-center {
-    align-items: center;
 }
 
 .fadeIn {
