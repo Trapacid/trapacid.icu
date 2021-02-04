@@ -62,9 +62,19 @@ a:hover {
     width: 7rem;
 }
 
-.mx-4 {
+.x-mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.x-mx-3 {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+}
+
+.x-mx-2 {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 .flex-grid {
