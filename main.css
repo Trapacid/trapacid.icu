@@ -62,6 +62,13 @@ a:hover {
     width: 7rem;
 }
 
+#MOS_Excel {
+    border-radius: 12%;
+    max-width: 100%;
+    justify-content: space-between;
+    width: 7rem;
+}
+
 .x-mx-4 {
     margin-left: 1rem;
     margin-right: 1rem;
