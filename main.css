@@ -7,8 +7,8 @@ html {
 }
 
 body {
-  background-color: #1A1423;
-  font-family: 'Inter', monospace;
+    background-color: #1A1423;
+    font-family: 'Inter', monospace;
 }
 
 h1, h2 {
@@ -75,6 +75,11 @@ a:hover {
 .x-mx-2 {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+}
+
+.x-mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
 }
 
 .flex-grid {
