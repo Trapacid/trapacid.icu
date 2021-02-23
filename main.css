@@ -34,42 +34,7 @@ a:hover {
     justify-content: space-between;
 }
 
-#iba {
-    border-radius: 12%;
-    max-width: 100%;
-    justify-content: space-between;
-    width: 7rem;
-}
-
-#nta {
-    border-radius: 12%;
-    max-width: 100%;
-    justify-content: space-between;
-    width: 7rem;
-}
-
-#MOS_Word {
-    border-radius: 12%;
-    max-width: 100%;
-    justify-content: space-between;
-    width: 7rem;
-}
-
-#MOS_PowerPoint {
-    border-radius: 12%;
-    max-width: 100%;
-    justify-content: space-between;
-    width: 7rem;
-}
-
-#MOS_Excel {
-    border-radius: 12%;
-    max-width: 100%;
-    justify-content: space-between;
-    width: 7rem;
-}
-
-#MTA_MDF {
+#Cert_Badge {
     border-radius: 12%;
     max-width: 100%;
     justify-content: space-between;
