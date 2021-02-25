@@ -28,7 +28,7 @@ a:hover {
 #pfp {
     border-radius: 50%;
     max-width: 100%;
-    width: 14rem;
+    width: 12rem;
     animation: fadeIn;
     animation-duration: 1s;
     justify-content: space-between;
